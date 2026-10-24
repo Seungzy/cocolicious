@@ -13,7 +13,7 @@ import CheckoutView from './views/Checkout.vue'
 import TransactionsView from './views/Transactions.vue'
 
 const router = createRouter({
-  history: createWebHashHistory(),
+  history: createWebHashHistory(import.meta.env.BASE_URL),
   routes: [
     { path: '/', name: 'home', component: HomeView },
     { path: '/about', name: 'about', component: AboutView },
